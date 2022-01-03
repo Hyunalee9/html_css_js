@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import pinn from './pinn.jpg';
 
-function App() {
+function App() {//JSX 문법 , 리액트는 데이터 바인딩이 용이함 (물론 vue도)
+                // {변수명, 함수}
+                // style은 무조건 object, {} 이용
+                // style 왼쪽은 camelCase루
+
+  let posts = '02.데이터 바인딩';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         이현아 리액트 공부
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+     <div className="black-nav">
+        <div style={{ fontSize : '30px' }}>Hyuna's 티끌 모아 태산 </div>   
+     </div>
+     <img src={pinn} alt="pinn" style={{ padding: '10px' }} /> 
+     <h4>{posts}</h4>  
     </div>
   );
 }
